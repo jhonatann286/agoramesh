@@ -1,4 +1,5 @@
 import HistoryPage from '@/pages/HistoryPage';
+import HelloWorldPage from '@/pages/HelloWorldPage';
 import Home from '@/pages/Home';
 import MedalsPage from '@/pages/MedalsPage';
 import Vue from 'vue';
@@ -54,6 +55,11 @@ export default new Router({
             path: '/medals',
             name: 'Medals',
             component: MedalsPage,
+        },
+        {
+            path: '/hello',
+            name: 'HelloWorld',
+            component: HelloWorldPage,
         },
         {
             path: '/street-view/:modeSelected/:time',
